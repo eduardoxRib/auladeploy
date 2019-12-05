@@ -4,6 +4,7 @@ import * as firebase from 'firebase/app'
 import 'firebase/firestore'
 
 import ItemGame from './ItemGame'
+import Discount from '../images/discount.png'
 
 class Jogos extends Component {
     constructor(props) {
@@ -54,6 +55,16 @@ class Jogos extends Component {
         return (
             <div className="container sm-12" style={{ backgroundColor: 'white' }}>
                 <br />
+                <div className="row">
+                    <div className="col-sm-3" style={{ textAlign: "Right" }}>
+                        <img src={Discount} alt="" style={{ width: '25%' }} />
+                    </div>
+                    <div className="col-sm-9">
+                        <br />
+                        <h2>Jogos em Promoção</h2>
+                    </div>
+
+                </div>
                 <div className="container" style={{ marginTop: '2vh' }}>
                     <div className='row justify-content-center'>
                         {this.state.boardgames.map((boardgame) => (

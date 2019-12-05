@@ -73,6 +73,8 @@ class Noticia extends Component {
                     </div>
                     <br />
                     <div>
+                        <h4 className="numberLast">R$ {Number(this.state.Preco).toFixed(2)}</h4>
+                        <h3><div className="numberDesconto">R$ {Number((this.state.Preco / 100) * (100 - this.state.Desconto)).toFixed(2)}</div> ({this.state.Desconto}%)</h3>
                         <input type="button" className="btn btn-success mb-4" value="Adicionar no Carrinho" onClick={this.comprar} />
                     </div>
                 </div>

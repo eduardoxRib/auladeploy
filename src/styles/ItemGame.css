@@ -8,3 +8,11 @@
     margin: 3px;
     text-align: 'center';
 }
+
+.numberLast {
+    text-decoration: line-through;
+}
+
+.numberDesconto {
+    color: red;
+}

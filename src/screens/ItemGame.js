@@ -13,6 +13,10 @@ const ItemGame = props => (
             <p className="card-text" style={{ float: 'bottom' }}>Designer: {props.designer}<br /></p>
         </div>
         <div style={{ textAlign: "center" }}>
+            <h4 className="numberLast">R$ {Number(props.preco).toFixed(2)}</h4>
+            <h3><div className="numberDesconto">R$ {Number((props.preco / 100) * (100 - props.desconto)).toFixed(2)}</div> ({props.desconto}%)</h3>
+        </div>
+        <div style={{ textAlign: "center" }}>
             <Link to={`/jogo/${props.id}`}>
                 <input type="button" value="Comprar" className="btn btn-danger mb-2" />
             </Link>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { HashRouter, BrowserRouter as Router, Route } from 'react-router-dom'
 
 import Header from './screens/Header'
 import Footer from './screens/Footer'
@@ -8,14 +8,14 @@ import PagJogo from './screens/PagJogo'
 
 function App() {
   return (
-    <div>
-      <Router>
+    <HashRouter basename='/'>
+      <div>
         <Header />
         <Route path="/" exact component={Jogos} />
         <Route path="/jogo/:id" component={PagJogo} />
         <Footer />
-      </Router>
-    </div>
+      </div>
+    </HashRouter>
   );
 }
 
