@@ -15,3 +15,8 @@ workbox.routing.registerRoute(
     'http://localhost:3000/#/',
     new workbox.strategies.NetworkFirst()
 );
+
+workbox.routing.registerRoute(
+    'https://eduardoxrib.github.io/auladeploy/#/',
+    new workbox.strategies.NetworkFirst()
+);
