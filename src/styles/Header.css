@@ -1,0 +1,16 @@
+img {
+    width: 20vh;
+    margin: 10px;
+}
+
+.Title {
+    font-size: 10vh;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.headerRow {
+    background-color: #d5fbd3;
+    -webkit-box-shadow:0px 1px 1px black;
+    -moz-box-shadow:0px 1px 1px black;
+    box-shadow:0px 1px 2px black;
+}

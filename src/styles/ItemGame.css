@@ -1,0 +1,10 @@
+.imagem {
+    justify-content: center;
+    width: 100%;
+    height: 270px; 
+}
+
+.card {
+    margin: 3px;
+    text-align: 'center';
+}
